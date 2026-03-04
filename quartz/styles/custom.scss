@@ -1,0 +1,33 @@
+@use "./base.scss";
+
+// put your custom CSS here!
+
+// Print styles for resume and portfolio pages
+@media print {
+  #quartz-body {
+    display: block !important;
+  }
+
+  // Hide sidebar, graph, TOC, footer, nav when printing
+  .sidebar,
+  .right-sidebar,
+  .graph,
+  footer,
+  .breadcrumbs,
+  .page-title,
+  .darkmode,
+  .search,
+  .explorer,
+  .language-switcher,
+  .spacer,
+  .backlinks,
+  .comments {
+    display: none !important;
+  }
+
+  .resume-view article,
+  .portfolio-view article {
+    max-width: 100%;
+    padding: 0;
+  }
+}

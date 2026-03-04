@@ -1,0 +1,37 @@
+# PDF generation targets (single URL per page; use lang to pick language for multilang pages)
+targets:
+  - path: /profile/resume
+    lang: en
+    output: jeayoungjeon-resume-en.pdf
+  - path: /profile/resume
+    lang: ko
+    output: jeayoungjeon-resume-ko.pdf
+  - path: /profile/portfolio
+    lang: en
+    output: jeayoungjeon-portfolio-en.pdf
+  - path: /profile/portfolio
+    lang: ko
+    output: jeayoungjeon-portfolio-ko.pdf
+
+pdf_options:
+  format: A4
+  printBackground: true
+  margin:
+    top: 16mm
+    right: 16mm
+    bottom: 16mm
+    left: 16mm
+
+viewport:
+  width: 1200
+  height: 800
+  deviceScaleFactor: 2
+
+timeout:
+  navigation: 30000
+  font: 8000
+  network: 3000
+  render: 2000
+
+server:
+  port: 8080
