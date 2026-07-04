@@ -9,6 +9,10 @@ updates:
         applies-to: "version-updates"
         patterns:
           - "*"
+    commit-message:
+      prefix: "🤖 ci"
+      prefix-development: "🤖 ci"
+      include: "scope"
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
@@ -18,3 +22,7 @@ updates:
         applies-to: "version-updates"
         patterns:
           - "*"
+    commit-message:
+      prefix: "🤖 ci"
+      prefix-development: "🤖 ci"
+      include: "scope"
